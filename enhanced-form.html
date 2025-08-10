@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance HTML</title>
+    <meta name="description" content="Enhanced Form Page">
+    <meta name="keywords" content="HTML, Form, Input Validation">
+</head>
+<body>
+    <header>
+        <h1>Enhanced Form Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Lists</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Tables</a></li>
+                <li><a href="#">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Ordered List</h2>
+        <ol>
+            <li>Introduction to HTML</li>
+            <li>Understanding HTML</li>
+            <li>Enhanced HTL</li>
+        </ol>
+        </div>
+        <div>
+        <h2>Unordered List</h2>
+        <ul>
+            <li>Responsive Design</li>
+            <li>Semantic HTML</li>
+            <li>Accessibility Features</li>
+        </ul>
+        </div>
+        <div>
+        <h2>Definition List</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language, the standard markup language for documents designed to be displayed in a web browser.</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets, a style sheet language used for describing the presentation of a document written in HTML or XML.</dd>
+            <dt>JavaScript</dt>
+            <dd>A programming language that conforms to the ECMAScript specification, commonly used in web development.</dd>
+
+        </dl>
+        </div>
+        <div>
+        <h2>Nested List</h2>
+        <ul>
+            <li>Web Technologies
+                <ul>
+                    <li>Frontend Development</li>
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ol>
+                    <li>Backend Development</li>
+                    <ol>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>Ruby</li>
+                </ul>
+            </li>
+            <li>Web Design
+                <ul>
+                    <li>User Experience (UX)</li>
+                    <li>User Interface (UI)</li>
+                    <li>WordPress Design</li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+        <h2>Image</h2>
+        <img src="https://images.pexels.com/photos/5700184/pexels-photo-5700184.jpeg" alt="Placeholder Image" width="300">
+        <h2>Video</h2>
+        <video width="320" height="240" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.  
+        </audio>  
+        <div>
+        <h2>Tables</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Use Case</th>
+                    <th>Sample Prompts</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ChatGPT</td>
+                    <td>Generate form code, label help</td>
+                    <td>
+                        <ul>
+                            <li> Create a contact form with name, email, and message fields.</li>
+                            <li> Generate a registration form with username, password, and confirm password fields.</li>
+                            <li> Create a feedback form with rating and comments sections.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Claude</td>
+                    <td>	Improve semantics and user flow</td>
+                    <td>
+                        <ul>
+                            <li> How would you rewrite this form to be clearer and more user-friendly?</li>
+                            <li> Explain the purpose of each input type in this form.</li>
+                            
+                        </ul>
+                </tr>
+                <tr>
+                    <td>Gemini</td>
+                    <td>SEO-friendly form structure</td>
+                    <td>
+                        <ul>
+                            <li> Create a form for newsletter signup with email validation</li>
+                            <li> What form elements affect SEO or page performance?</li>
+                        </ul>
+                </tr>
+                <tr>
+                    <td>Copilot</td>
+                    <td>Auto-complete input groups</td>
+                    <td>
+                        <ul>
+                            <li>Tip: Start typing <form> or <input type="#"—Copilot will suggest complete groups.> </li>
+                        </ul>
+                </tr>
+                <tr>
+                    <td>Figma AI</td>
+                    <td>Visualize form layouts</td>
+                    <td>
+                        <ul>
+                            <li> Design a responsive login form layout with email + password.</li>
+                        </ul>
+                </tr>
+                <tr>
+                    <td>Canva</td>
+                    <td>Write form instructions or placeholder content</td>
+                    <td>
+                        <ul>
+                            <li> Write a placeholder message for a contact form textarea</li>
+                            <li> Suggest copy for a job application form button</li>
+                        </ul>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        
+    <div>
+    <h1>Enhanced Form</h1>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5e2cfcf4-22c3-421f-9c2e-f6a0d0eda860">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="number">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" max="120" required><br><br>
+
+        <label for="DOB">Date of Birth</label>
+        <input type="date" id="DOB" name="DOB" required><br><br>
+        
+        <label for="Gender">Gender</label required>
+            <br>
+        <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label><br><br>
+
+        <label for="Country">Country</label>
+        <select id="country" name="country">
+            <option value="Kenya">Kenya</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="Appointment Date">Appointment Date</label>
+        <input type="datetime-local" id="appointment" name="appointment"><br><br>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
+        <footer>
+            <p>&copy; 2023 Enhanced Form Page. All rights reserved.</p>
+        </footer>  
+     
+    </main>
+</body>
+</html>
